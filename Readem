@@ -1,0 +1,47 @@
+<body class="bg-gray-100 p-4">
+    <div class="max-w-md mx-auto bg-white p-8 rounded shadow-md">
+        <h1 class="text-2xl font-semibold mb-4">Formulaire avec Tailwind CSS</h1>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="nom">Nom :</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nom" type="text" placeholder="Entrez votre nom">
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email :</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Entrez votre adresse email">
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="pays">Pays :</label>
+                <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="pays">
+                    <option value="france">France</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">États-Unis</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Préférences :</label>
+                <div class="mt-2">
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox text-indigo-600" name="preference" value="newsletter">
+                        <span class="ml-2">Recevoir la newsletter</span>
+                    </label>
+                </div>
+                <div class="mt-2">
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox text-indigo-600" name="preference" value="offres">
+                        <span class="ml-2">Recevoir des offres spéciales</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex justify-between">
+                <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Soumettre</button>
+                <button class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="reset">Réinitialiser</button>
+            </div>
+        </form>
+    </div>
+</body>
