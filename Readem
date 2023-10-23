@@ -45,3 +45,54 @@
         </form>
     </div>
 </body>
+
+
+
+
+
+
+
+
+Pour rendre toute une ligne d'un tableau cliquable, vous pouvez utiliser du JavaScript pour gérer les clics sur la ligne et rediriger l'utilisateur vers la page souhaitée lorsque la ligne est cliquée. Voici un exemple de code HTML et JavaScript pour accomplir cela :
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style pour mettre en évidence la ligne au survol */
+        tr:hover {
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // Fonction pour rediriger lorsque la ligne est cliquée
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr onclick="redirectToPage('lien1.html')">
+            <td>Liste 1</td>
+            <td>Description 1</td>
+        </tr>
+        <tr onclick="redirectToPage('lien2.html')">
+            <td>Liste 2</td>
+            <td>Description 2</td>
+        </tr>
+        <tr onclick="redirectToPage('lien3.html')">
+            <td>Liste 3</td>
+            <td>Description 3</td>
+        </tr>
+    </table>
+</body>
+</html>
+Dans cet exemple, nous utilisons un événement onclick pour chaque ligne du tableau. Lorsque l'utilisateur clique sur une ligne, la fonction JavaScript redirectToPage est appelée avec l'URL de destination en tant qu'argument, et la page est redirigée vers l'URL spécifiée.
+
+De plus, nous avons ajouté un style CSS pour mettre en évidence la ligne au survol (changement de couleur de fond et curseur en main) pour indiquer qu'elle est cliquable.
+
+N'oubliez pas de personnaliser les URL et le contenu de chaque ligne en fonction de vos besoins.
